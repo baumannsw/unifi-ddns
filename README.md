@@ -7,6 +7,8 @@
 
 A Cloudflare Worker script that enables UniFi devices (e.g., UDM-Pro, USG) to dynamically update DNS A/AAAA records on Cloudflare.
 
+#This is a fork
+
 ## Why Use This?
 
 > **Note:** UniFi Network Application 9.1.92+ includes native Cloudflare DDNS support. If your gateway runs this firmware or newer, you may not need this worker. However, the native implementation does not support multi-hostname updates, dual-stack (IPv4 + IPv6), or preserving proxy status — this worker remains useful for those use cases and for older firmware.
@@ -58,3 +60,4 @@ UniFi devices running older firmware do not natively support Cloudflare as a DDN
 ## 🛠️ **Testing & Troubleshooting**
 
 Using this script with various Ubiquiti devices and different UniFi software versions can introduce unique challenges. If you encounter issues, start by checking the FAQ in `/docs/faq.md`. If you don’t find a solution, you can ask a question on the [discussions page](https://github.com/willswire/unifi-ddns/discussions/new?category=q-a). If the problem persists, please raise an issue [here](https://github.com/willswire/unifi-ddns/issues).
+
